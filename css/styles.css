@@ -1,9 +1,16 @@
+:root{
+    --font-color: #494C6B;
+    --grey: #979797;
+
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 img{
     display: block;
@@ -18,4 +25,101 @@ ul{
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/images/bg-mobile-light.jpg');
+    padding: 24px;
+    padding-top: 48px;
+    position: absolute;
+}
+.nav{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color: white;
+}
+.main{
+    width: 100%;
+    margin-top: 108px;
+    position: absolute;
+    padding: 0 24px;
+}
+.checkImg{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #979797;
+    margin-right: 12px;
+    background-color: transparent;
+}
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.text-box, .tasks{
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+}
+.text-box{
+    height: 48px;
+    padding: 14px 0 14px 20px;
+    margin-bottom: 16px;
+}
+.inputText{
+    border-style: none;
+}
+.tasks{
+    margin-bottom: 16px;
+    box-shadow: 0px 10px 30px var(--grey);
+}
+.task{
+    color: var(--font-color);
+    width: 100%;
+    padding: 16px 20px;
+}
+.cross{
+    position: relative;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    margin-left: auto;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #979797;
+    opacity: 0.3;
+}
+.options{
+    font-weight: 400;
+    font-size: 12px;
+    color: #9495A5;
+    padding: 16px 20px;
+    justify-content: space-between;
+}
+.clearbutton{
+    font-weight: 400;
+    font-size: 12px;
+    color: #9495A5;
+    border-style: none;
+    background-color: transparent;
+}
+.filters{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px var(--grey);
+}
+.filters p {
+    margin: 0;
 }

@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TodoList</title>
 </head>
-<body>
-    
+<body class="body"> 
+    <header class="header">
+        <nav class="nav">
+            <span class="title">TODO</span>
+            <img src="./assets/images/icon-moon.svg" alt="">
+        </nav>
+    </header>
+    <main class="main">
+        <div class="flex text-box">
+            <div class="checkImg"><img src="" alt=""></div>
+            <input class="inputText" type="text" placeholder="Create a new todo…">
+        </div>
+        <div class="tasks">
+            <div class="flex task">
+                <img class="checkImg" src="./assets/images/icon-check.svg" alt="">
+                <p>Complete online JavaScript course</p>
+                <img class="cross" src="./assets/images/icon-cross.svg" alt="">
+            </div>
+            <div class="line"></div>
+            <div class="flex task">
+                <img class="checkImg" src="./assets/images/icon-check.svg" alt="">
+                <p>Complete online JavaScript course</p>
+                <img class="cross" src="./assets/images/icon-cross.svg" alt="">
+            </div>
+            <div class="line"></div>
+            <div class="options flex">
+                <p><span>5</span> items left</p>
+                <button class="clearbutton">Clear Completed</button>
+            </div>
+        </div>
+        <div class="flex filters">
+            <p>All</p>
+            <p>Active</p>
+            <p>Completed</p>
+        </div>
+    </main>
 </body>
 </html>
